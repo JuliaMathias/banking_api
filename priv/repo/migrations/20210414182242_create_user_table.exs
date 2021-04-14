@@ -1,4 +1,4 @@
-defmodule Rocketpay.Repo.Migrations.CreateUserTable do
+defmodule BankingApi.Repo.Migrations.CreateUserTable do
   @moduledoc """
   Creates User Table
   """
