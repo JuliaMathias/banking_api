@@ -1,6 +1,6 @@
 defmodule BankingApi.Users.Schemas.User do
   @moduledoc """
-  Add user config
+  The entity of User
   """
   use Ecto.Schema
   import Ecto.Changeset
