@@ -3,15 +3,13 @@ defmodule BankingApiWeb.UsersController do
 
   alias BankingApi.Users.Schemas.User
 
-  def create(conn, params) do
-    params
-    |> BankingApi.create_user()
-    |> handle_response(conn)
-  end
+  action_fallback BankingApiWeb.FallbackController
 
-  defp handle_response({:ok, %User{} = user}, conn) do
-    conn
+  def create(conn, params) do
+    with {:ok, %User{} = user} <- BankingApi.create_user(params) do
+      conn
     |> put_status(:created)
     |> render("create.json", user: user)
+    end
   end
 end
