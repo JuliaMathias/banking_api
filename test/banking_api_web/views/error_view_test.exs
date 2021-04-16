@@ -1,4 +1,7 @@
 defmodule BankingApiWeb.ErrorViewTest do
+  @moduledoc """
+  Documentation
+  """
   use BankingApiWeb.ConnCase, async: true
 
   # Bring render/3 and render_to_string/3 for testing custom views

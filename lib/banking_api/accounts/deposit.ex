@@ -1,4 +1,7 @@
 defmodule BankingApi.Accounts.Deposit do
+  @moduledoc """
+  Documentation
+  """
   alias BankingApi.Accounts.Operation
   alias BankingApi.Repo
 

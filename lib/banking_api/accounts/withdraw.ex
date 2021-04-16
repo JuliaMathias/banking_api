@@ -1,5 +1,7 @@
 defmodule BankingApi.Accounts.Withdraw do
-
+  @moduledoc """
+  Documentation
+  """
   alias BankingApi.Accounts.Operation
   alias BankingApi.Repo
 
